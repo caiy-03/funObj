@@ -1,0 +1,17 @@
+class A
+{
+public:
+	int operator() (int val)
+	{
+		return val > 0 ? val : -val;
+	}
+};
+
+int main(void)
+{
+	int i = -1;
+	A func;
+	cout << func(i) << endl;
+	system("pause");
+	return 0;
+}
